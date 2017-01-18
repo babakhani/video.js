@@ -409,7 +409,6 @@ class TextTrackSettings extends Component {
    * @private
    */
   createElFont_() {
-    var self = this;
     const fontPercent = createEl('div', {
       className: 'vjs-font-percent vjs-tracksetting'
     }, undefined, this.createElSelect_('fontPercent'));
