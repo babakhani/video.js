@@ -297,7 +297,7 @@ class TextTrackSettings extends Component {
     return [
       createEl('label', {
         className: 'vjs-label',
-        textContent: config.label
+        textContent: this.localize(config.label)
       }, {
         for: id
       }),
@@ -409,6 +409,7 @@ class TextTrackSettings extends Component {
    * @private
    */
   createElFont_() {
+    var self = this;
     const fontPercent = createEl('div', {
       className: 'vjs-font-percent vjs-tracksetting'
     }, undefined, this.createElSelect_('fontPercent'));
@@ -442,7 +443,7 @@ class TextTrackSettings extends Component {
 
     const doneButton = createEl('button', {
       className: 'vjs-done-button',
-      textContent: 'Done'
+      textContent:  this.localize('Done')
     });
 
     return createEl('div', {
