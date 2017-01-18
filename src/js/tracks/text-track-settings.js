@@ -442,7 +442,7 @@ class TextTrackSettings extends Component {
 
     const doneButton = createEl('button', {
       className: 'vjs-done-button',
-      textContent:  this.localize('Done')
+      textContent: this.localize('Done')
     });
 
     return createEl('div', {
